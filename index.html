@@ -9,7 +9,8 @@
     <!-- MY STYLE -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- JS -->
-    <script src="js/script.js" defer></script>
+    <script src="js/script-email.js" defer></script>
+    <script src="js/script-dadi.js" defer></script>
     <!-- INSERISCI IL TITOLO DEL PROGETTO-->
     <title>Gioco dei dadi</title>
 </head>
@@ -25,8 +26,19 @@
                 </div>
             </div>
         </div>
-        <div class="dadi">
-            
+        <div class="dadi mt-5 text-center">
+            <h2><b>IL GIOCO DEI DADI</b></h2>
+            <button id="btn-dadi" class="btn btn-primary mt-3">GIOCA</button>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <h4>RISULTATO DADO UTENTE</h4>
+                    <p id="dado-utente"></p>
+                </div>
+                <div class="col-6">
+                    <h4>RISULTATO DADO COMPUTER</h4>
+                    <p id="dado-cpu"></p>
+                </div>
+            </div>
         </div>
     </main>
 </body>
