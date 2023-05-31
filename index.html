@@ -9,7 +9,7 @@
     <!-- MY STYLE -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- JS -->
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <!-- INSERISCI IL TITOLO DEL PROGETTO-->
     <title>Gioco dei dadi</title>
 </head>
@@ -21,6 +21,8 @@
                 <div class="col d-flex flex-column">
                     <label for="email">Registrati usando la tua email per procedere</label>
                     <input type="email" id="user-email" placeholder="example@email.it" class="my-2">
+                    <p id='success'class="d-none text-success">Registrazione completata con successo</p>
+                    <p id="alert" class="d-none text-danger">Attenzione email già utilizzata</p>
                     <button id="button" class="btn btn-primary">Invia</button>
                 </div>
             </div>
