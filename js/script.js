@@ -16,22 +16,23 @@ button.addEventListener('click', function(){
 
     // console.log(userEmail)
     
-    let newEmail = []
+    let newEmail = ''
 
     // creo un ciclo che controlli all'interno della mai lista di email se la mail del user è già presente ALTRIMENTI la aggiungo alla lista
     for (let i = 0; i < emailsList.length; i++ ){
         
-        const newEmail = i
+        
 
         if (emailsList[i] === userEmail){
             
-            warningMsg.classList.add('d-block');
+            // warningMsg.classList.add('d-block');
+            console.log('già presente');
         } else {
-            newEmail.push(emailsList);
-            successMsg.classList.add('d-block');
+            emailsList.push(userEmail);
+            // successMsg.classList.add('d-block');
+            console.log('aggiunto');
         }
         
-        console.log(userEmail);
     
     }
 
